@@ -1,0 +1,1 @@
+docker build -t hello-k8s:latest $* .
