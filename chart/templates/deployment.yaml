@@ -11,10 +11,11 @@ spec:
     metadata:
       labels:
         app: hello-kubernetes
+        version: {{ .Values.hellokubernetes.deployment.version }}
     spec:
       containers:
       - name: hello-kubernetes
-        image: docker.io/bricerisingslalom/hello-k8s:latest
+        image: {{ .Values.hellokubernetes.deployment.image }}
         resources:
           limits:
             memory: 128M

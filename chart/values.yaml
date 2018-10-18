@@ -1,0 +1,5 @@
+
+hellokubernetes:
+  deployment:
+    image: docker.io/bricerisingslalom/hello-k8s:latest
+    version: "\"1.0\""
