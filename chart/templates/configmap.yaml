@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: hello-kubernetes
 data:
-  CONFIGMAP_CONFIG: Custom configmap config!
+  CONFIGMAP_CONFIG: {{ .Values.hellokubernetes.configmap.configmap_config }}

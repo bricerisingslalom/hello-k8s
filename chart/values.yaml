@@ -3,3 +3,11 @@ hellokubernetes:
   deployment:
     image: docker.io/bricerisingslalom/hello-k8s:latest
     version: "\"1.0\""
+
+  service:
+    type: NodePort
+
+  configmap:
+    configmap_config: Custom configmap config!
+  secret:
+    secret_config: Custom secret config!
